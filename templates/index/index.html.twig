@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+    {% block breadcrub %}
+        {{ include('index/breadcrumb.html.twig', { 'backgroundColor': 'violet' }) }}
+
+    {% endblock %}
+
+    {% block menu %}
+        {{ include('index/menu.html.twig', { 'backgroundColor': 'violet' }) }}
+    {% endblock %}
+
+{% block body %}
+
+<div class="row">
+    {% for   value  in products %}
+        <div class="col-lg-3 border">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ value.image }}" alt="Card image cap img-fluid"
+                     style="width:70%" >
+                <div class="card-body">
+                    <h5 class="card-title">{{ value.name }}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">price : {{ value.price }}</li>
+                    <li class="list-group-item">color : {{ value.color}}</li>
+                </ul>
+                <div class="card-body">
+                    <a href="{{ path('show', {sku: value.sku }) }}" class="btn btn-primary">Detail </a>
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>
+
+{% endblock %}
