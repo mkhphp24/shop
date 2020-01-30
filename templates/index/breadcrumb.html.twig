@@ -1,0 +1,9 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {% for  value in category.breadcrumb %}
+            <li class="breadcrumb-item"><a href="#">
+                    {{ value }}
+                </a></li>
+        {% endfor %}
+    </ol>
+</nav>

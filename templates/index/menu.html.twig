@@ -1,0 +1,20 @@
+<h3>Color</h3>
+<li class='' style="font-weight: {{ 'all' == selectedColor?'bold':'' }}"><a href="{{ path('filter',{brand:selectedBrand,color:'all',  sort:selectedSort}) }}#">All</a></li>
+{% for  color in colors %}
+    <li class='' style="font-weight: {{ color == selectedColor?'bold':'' }}"><a href="{{ path('filter',{brand:selectedBrand,color:color,  sort:selectedSort}) }}#">{{ color }}</a></li>
+{% endfor %}
+
+<hr>
+<h3>Mark</h3>
+<li class='' style="font-weight: {{ 'all' == selectedBrand?'bold':'' }}"><a href="{{ path('filter',{brand:'all', color:selectedColor,  sort:selectedSort}) }}#">All</a></li>
+{% for  brand in brands %}
+    <li class='' style="font-weight: {{ brand == selectedBrand?'bold':'' }}"><a href="{{ path('filter',{brand:brand, color:selectedColor,  sort:selectedSort}) }}#">{{ brand }}</a></li>
+{% endfor %}
+
+<hr>
+<h3>Sort</h3>
+<li class='' style="font-weight: {{ 'price' == selectedSort?'bold':'' }}"><a href="{{ path('filter',{brand:selectedBrand,color:selectedColor, sort: 'price'}) }}#">Price</a></li>
+<li class='' style="font-weight: {{ 'name' == selectedSort?'bold':'' }}"><a href="{{ path('filter',{brand:selectedBrand,color:selectedColor, sort: 'name'}) }}#">Name</a></li>
+
+
+

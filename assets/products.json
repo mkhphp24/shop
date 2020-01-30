@@ -1,0 +1,70 @@
+
+{
+	"category":
+    {
+        "name": "Kleidung",
+        "breadcrumb": ["Damen", "Kleidung"]
+    },
+
+    "products":
+    [
+        {
+            "sku": "7022817_104_SLATE_187942",
+            "brand": "Dawn Levy New York",
+            "name": "T-Shirt - Oil Washed",
+            "description": "Schriftzug „New Denim Apparel” Oil-Washed-Optik Brusttasche Rundhalsausschnitt 100 % Baumwolle",
+            "price": 129,
+            "special_price": 119,
+            "image": "http://kikmedia.zoomoviewer.com/images/k_S1040873_prod_1314_01_EP_976/380-460/T-Shirt-Oil_Washed___New_Denim_Apparel_-Dunkelblau-S1040873_1.jpg",
+            "color": "blau"
+        },
+        {
+            "sku": "D53UNG8001_29335M-201_699_BLU_165694",
+            "brand": "Ungaro",
+            "name": "Basic T-Shirt",
+            "description": "Unifarbe Rundhalsausschnitt 100 % Baumwolle",
+            "price": 49,
+            "special_price": 44,
+            "image": "http://kikmedia.zoomoviewer.com/images/k_S1006147_prod_04_01_ISA_486/380-460/Basic_T-Shirt-Dunkelblau-S1006147.jpg",
+            "color": "blau"
+        },
+        {
+            "sku": "D11UNG8002_20960-303_939_GRIGIO_165652",
+            "brand": "Ungaro",
+            "name": "Regenjacke",
+            "description": "2 Eingrifftaschen, 1 Brusttasche Abnehmbare Kapuze Wasserdicht (Wassersäule: 3.000 mm) Atmungsaktiv: 3.000 g/m²/24h Fleecefutter",
+            "price": 129,
+            "special_price": 114.5,
+            "image": "http://kikmedia.zoomoviewer.com/images/k_S1004388_prod_01_01_ISA_938/380-460/Regenjacke-abnehmbare_Kapuze-Helltuerkis-S1004388.jpg",
+            "color": "grau"
+        },
+        {
+            "sku": "TS7121DO_C099_WHITE_136125",
+            "brand": "ALCOTT",
+            "name": "Softshelljacke",
+            "description": "Abtrennbare Kapuze Fleecefutter Windstopp an den Ärmeln Wasserdicht (Wassersäule 3.000 mm) Atmungsaktivität 3.000 g/m²/24h",
+            "price": 149,
+            "image": "http://kikmedia.zoomoviewer.com/images/k_S1004363_prod_01_01_ISA_938/380-460/Softshelljacke-wasserdicht__Kapuze_abnehmbar-Offwhite-S1004363.jpg",
+            "color": "weiß"
+        },
+        {
+            "sku": "Celine_07_nerobianco_147523",
+            "brand": "Fontana 2.0",
+            "name": "CELINE Rock",
+            "description": "Gerüschte Lagenoptik Komplett aus Spitze Elastischer Bund Artikel fällt eine Größe kleiner aus",
+            "price": 150,
+            "image": "http://kikmedia.zoomoviewer.com/images/k_S1046754_prod_1215_01_EP_987/380-460/Rock-Spitze-Offwhite-S1046754.jpg",
+            "color": "weiß"
+        },
+        {
+            "sku": "D2HLB472_11543_899_175130",
+            "brand": "Versace",
+            "name": "Kleid",
+            "description": "Unifarbe Gekreuzte Träger Gürteloptik in der Taille Enge Passform Reißverschluss hinten",
+            "price": 259,
+            "special_price": 154,
+            "image": "http://kikmedia.zoomoviewer.com/images/k_S1046114_prod_01_01_EP_987/380-460/Kleid-uni__elegant-Hellrosa-S1046114.jpg",
+            "color": "rosa"
+        }
+    ]
+}

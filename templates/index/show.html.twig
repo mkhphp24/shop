@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+
+    {% block breadcrub %}
+        {{ include('index/breadcrumb.html.twig', { 'backgroundColor': 'violet' }) }}
+
+    {% endblock %}
+
+    {% block menu %}
+        {{ include('index/menu.html.twig', { 'backgroundColor': 'violet' }) }}
+    {% endblock %}
+
+    {% block body %}
+
+     <a href="{{ path('index') }}" class="btn btn-primary">Home</a>
+    <div class="row">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{ data.image }}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ data.name }}</h5>
+                <p class="card-text">{{ data.description }}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">price : {{ data.price }}</li>
+                {%  if   data.special_price is defined  %}
+                <li class="list-group-item">special_price : {{ data.special_price|default}}</li>
+                {%  endif %}
+                <li class="list-group-item">color : {{ data.color}}</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}

@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+{#<div class="col-lg-12">#}
+
+{#    <div class="col-lg-4">#}
+{#    <li class='' style="font-weight: {{ 'all' == selectedColor?'bold':'' }}"><a href="{{ path('filter',{brand:selectedBrand,color:'all',  sort:selectedSort}) }}#">All</a></li>#}
+{#    {% for  color in colors %}#}
+{#        <li class='' style="font-weight: {{ color == selectedColor?'bold':'' }}"><a href="{{ path('filter',{brand:selectedBrand,color:color,  sort:selectedSort}) }}#">{{ color }}</a></li>#}
+{#    {% endfor %}#}
+
+{#    </div>#}
+{#    <div class="col-lg-4">#}
+
+
+{#    <li class='' style="font-weight: {{ 'all' == selectedBrand?'bold':'' }}"><a href="{{ path('filter',{brand:'all', color:selectedColor,  sort:selectedSort}) }}#">All</a></li>#}
+{#    {% for  brand in brands %}#}
+{#        <li class='' style="font-weight: {{ brand == selectedBrand?'bold':'' }}"><a href="{{ path('filter',{brand:brand, color:selectedColor,  sort:selectedSort}) }}#">{{ brand }}</a></li>#}
+{#    {% endfor %}#}
+{#    </div>#}
+{#        <div class="col-lg-4">#}
+
+
+{#    <li class='' style="font-weight: {{ 'price' == selectedSort?'bold':'' }}"><a href="{{ path('filter',{brand:selectedBrand,color:selectedColor, sort: 'price'}) }}#">Price</a></li>#}
+{#    <li class='' style="font-weight: {{ 'name' == selectedSort?'bold':'' }}"><a href="{{ path('filter',{brand:selectedBrand,color:selectedColor, sort: 'name'}) }}#">Name</a></li>#}
+{#    </div>#}
+
+
+{#    <nav aria-label="breadcrumb">#}
+{#        <ol class="breadcrumb">#}
+{#            {% for  value in category.breadcrumb %}#}
+{#                <li class="breadcrumb-item"><a href="#">#}
+{#                        {{ value }}#}
+{#                    </a></li>#}
+{#            {% endfor %}#}
+{#        </ol>#}
+{#    </nav>#}
+{#</div>#}
+
+<div class="container">
+    <div class="row">
+    {% block breadcrub %}
+
+    {% endblock %}
+    </div>
+    <div class="row">
+
+        <div class="col-lg-2">
+            {% block menu %}
+
+            {% endblock %}
+        </div>
+
+        <div class="col-lg-10">
+        {% block body %}
+
+        {% endblock %}
+        </div>
+
+    </div>
+</div>
+{% block javascripts %}{% endblock %}
+</body>
 </html>
